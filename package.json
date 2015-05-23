@@ -1,29 +1,38 @@
 {
-  "name": "SimpleExpressServerForHeroku",
+  "name": "emilyv_portfolio",
   "version": "0.1.0",
-  "description": "A simple server based on Node.js and Express for deployment on Heroku",
+  "description": "Emily's design portfolio site",
   "main": "web.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidand36/SimpleExpressServerForHeroku.git"
+    "url": "https://github.com/emilyspv/emilyv_portfolio.git"
   },
   "keywords": [
-    "express",
-    "static",
-    "heroku"
+    "design",
+    "designer",
+    "projects",
+    "portfolio",
+    "UX",
+    "user experience",
+    "visual design",
+    "visual",
+    "graphic design"
+    "print design",
+    "app design",
+    "web design",
   ],
-  "author": "David M. Anderson",
+  "author": "Emily S. Voreis",
   "license": "GPL 3.0",
   "bugs": {
-    "url": "https://github.com/davidand36/SimpleExpressServerForHeroku/issues"
+    "url": "https://github.com/emilyspv/emilyv_portfolio/issues"
   },
   "engines": {
       "node": "0.10.x"
   },
-  "homepage": "https://github.com/davidand36/SimpleExpressServerForHeroku",
+  "homepage": "https://github.com/emilyspv/emilyv_portfolio",
   "dependencies": {
     "compression": "^1.0.9",
     "express": "^4.7.2",

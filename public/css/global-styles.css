@@ -1,0 +1,339 @@
+/* GLOBAL STYLES */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+button:focus{
+  outline: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+
+/* HEADER & NAV STYLES */
+
+header{
+  background-color: rgba(246, 245, 244, 1);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+header .fa{
+  float: right;
+}
+
+nav{
+  margin: 30px;
+}
+
+nav i{
+  color: black;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+nav li{
+  display: inline-block;
+  font-size: em;
+  list-style: none;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+nav li:first-of-type{
+  font-weight: 700;
+}
+
+nav a:link{
+  color: black;
+  text-decoration: none;
+}
+
+nav a:visited{
+  color: black;
+}
+
+nav a:hover{
+  background-color: indianred;
+}
+
+nav i:hover{
+  background-color: indianred;
+}
+
+
+/* CONTENT STYLES */
+
+article{
+  width: 100%;
+}
+
+article .subhero-text a{
+  color: black;
+  text-decoration: none
+}
+
+article .subhero-text a:hover{
+  background-color: antiquewhite;
+  text-decoration: underline;
+}
+
+.call-to-action{
+  color: indianred;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-left: 30px;
+  margin-top: 200px;
+  text-decoration: none;
+}
+
+.call-to-action:hover{
+  text-decoration: underline;
+}
+
+.hero-text{
+  font-size: 2em;
+  font-weight: 300;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 160px;
+  max-width: 700px;
+}
+
+.subhero-text{
+  color: gray;
+  font-size: 0.8em;
+  line-height: 180%;
+  margin-left: 30px;
+  margin-top: 30px;
+  max-width: 600px;
+}
+
+img.hero{
+  width: 100%;
+}
+
+.single-thumb{
+  width: 300px;
+  height: 225px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+div.project-group{
+  margin-left: 30px;
+  margin-top: 60px;
+}
+
+.project:last-of-type{
+  margin-bottom: 60px;
+}
+
+
+/* PROJECT CAPTIONS */
+
+article button{
+  background-color: rgba(0,0,0,0.6);
+  border: none;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.8em;
+  padding: 12px 15px;
+  position: fixed;
+  left: 30px;
+  top: 110px;
+  width: 40px;
+}
+
+article button:hover{
+  background-color: rgba(0,0,0,1);
+  color: white;
+}
+
+.hidey{
+  background-color: rgba(0,0,0,0.6);
+  color: rgba(255,255,255,0.6);
+  font-size: 0.8em;
+  line-height: 180%;
+  margin-left: 30 px;
+  margin-top: 15px;
+  max-width: 400px;
+  padding: 15px;
+  position: fixed;
+  top: 145px;
+}
+
+p.hidey a{
+  color: white;
+  text-decoration: none
+}
+
+p.hidey a:hover{
+  background-color: black;
+  text-decoration: underline;
+}
+
+
+/* HOVER STYLES */
+
+.project{
+  text-align: center;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.project,
+.project-hover,
+.project-hover .mask,
+.project-thumb,
+.hover-detail {
+  width: 300px;
+  height: 225px;
+}
+
+.project-hover,
+.project-hover .mask,
+.project-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.project-hover{
+  z-index:5;    
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;    
+  opacity:0;
+  cursor:pointer;        
+  display:block;
+  text-decoration:none;
+  text-align:center; 
+}
+
+.hover-detail{
+  z-index:10;
+  color:#ffffff;
+  display:table-cell;
+  vertical-align:middle;
+  position:relative;
+  z-index:5;            
+}
+
+.hover-detail .hover-title{
+  font-size:1em;            
+  width:75%;
+  margin:0 auto;        
+  padding:10px;
+}
+
+.project-hover .mask{
+  background-color:#000;
+  opacity:0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);                    
+  z-index:0;
+}
+
+.project-hover:hover{
+  opacity: 1;
+}
+
+.project-thumb{
+  background-color:#7a548f;
+  z-index:0; 
+}
+
+
+/* QUIZ STYLES */
+
+fieldset:first-of-type{
+  margin-top: 160px;
+}
+
+fieldset{
+  border: none;
+  margin-left: 30px;
+  outline: none;
+}
+
+fieldset input:last-of-type{
+  color: indianred;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+form .subhero-text{
+  margin-bottom: 50px;
+}
+
+label{
+/*
+  color: gray;
+  font-size: 0.9em;
+*/
+  font-weight: 400;
+  line-height: 180%;
+  margin-left: 10px;
+  margin-top: 30px;
+  max-width: 600px;
+}
+
+legend{
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: 15px;
+  margin-right: 30px;
+  max-width: 700px;
+}
+
+input value{
+  color: gray;
+  font-size: 0.8em;
+  line-height: 180%;
+  margin-left: 30px;
+  margin-top: 30px;
+  max-width: 600px;
+}
+
+
+/* FOOTER STYLES */
+
+footer{
+  border-top: 1px solid lightgray;
+  clear: both;
+  color: gray;
+  font-size: 0.8em;
+  margin: 30px 30px 30px 30px;
+  padding-top: 15px;
+}
+
+footer i{
+  color: black;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+footer i:hover{
+  background-color: indianred;
+}
+
+footer p{
+  float: left;
+  margin-right: 30px;
+}
+
